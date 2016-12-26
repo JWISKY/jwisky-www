@@ -31,7 +31,10 @@ html
     link(rel="stylesheet", href="/styles/importer.css")
     // STYLES END
 
-  body(ng-app="jwisky.www")
+  body(ng-controller="AppController")
+
+    block preloader
+      h1 Default Preloader
 
     block content
       h1 Default Content
@@ -78,5 +81,8 @@ html
     script(src="/js/dependencies/angular-material/angular-material.js")
     script(src="/js/dependencies/angular-animate/angular-animate.js")
     script(src="/js/dependencies/angular-aria/angular-aria.js")
-    script(src="/js/app/jwisky.www.module.js")
+    script(src="/js/app/jwisky-www.module.js")
+    script(src="/js/app/jwisky-www.controller.js")
+    script(src="/js/app/jwisky-www.run.js")
+    script(src="/js/app/jwisky-www.preloader.js")
     // SCRIPTS END

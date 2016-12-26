@@ -1,8 +1,21 @@
 extends layout.jade
 
+
+
 block title
 
   title JWISky
+
+
+
+block preloader
+
+  div.m-app-loading(ng-animate-children)
+    div.animated-container
+      div.messaging
+        h1
+          | Loading... please wait
+
 
 block content
 
